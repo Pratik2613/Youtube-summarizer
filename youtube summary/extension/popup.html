@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Transcript Summariser</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            width: max-content;
+            max-width: 800px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: coral;
+            margin-top: 10px;
+        }
+        button[disabled] {
+            background-color: lightcoral;
+            color: white;
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: lightpink;
+        }
+        p {
+            font-size: medium;
+        }
+        #read-summary-marathi {
+            display: none; /* Hide the "Read Summary in Marathi" button */
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Transcript Summariser</h1>
+    <button id="summarise" type="button">Summarise</button>
+    <br/>
+    <p id="output"></p>
+    <button id="translate-hindi" disabled>Translate to Hindi</button>
+    <button id="translate-marathi" disabled>Translate to Marathi</button>
+    <button id="read-summary" disabled>Read Summary</button>
+    <button id="read-summary-hindi" enabled>Read Summary in Other Language</button>
+    <button id="read-summary-marathi" enabled>Read Summary in Marathi</button>
+    <p id="translatedOutput"></p>
+    <script src="popup.js"></script>
+</body>
+</html>
